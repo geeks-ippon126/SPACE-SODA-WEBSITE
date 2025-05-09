@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+<div class="container">
+    <input type="radio" id="login" name="toggle" checked>
+    <input type="radio" id="register" name="toggle">
+
+    <div class="buttons">
+        <label for="login">Login</label>
+        <label for="register">Register</label>
+    </div>
+
+    <!-- Login Form -->
+    <form action="pay.php" method="POST" class="form login-form">
+        <input type="hidden" name="action" value="login">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Register Form -->
+    <form action="process.php" method="POST" class="form register-form">
+        <input type="hidden" name="action" value="register">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

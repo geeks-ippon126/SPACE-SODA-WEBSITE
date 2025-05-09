@@ -1,0 +1,86 @@
+/* Center the container */
+.container {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Toggle buttons */
+.container .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.container .buttons label {
+    flex: 1;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.container .buttons label:hover {
+    background: #ddd;
+}
+
+/* Hide radio buttons */
+.container input[type="radio"] {
+    display: none;
+}
+
+/* Form styling */
+.container .form {
+    display: none;
+}
+
+.container #login:checked ~ .login-form {
+    display: block;
+}
+
+.container #register:checked ~ .register-form {
+    display: block;
+}
+
+/* Input fields */
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Buttons */
+.container button {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button:hover {
+    background: #0056b3;
+}
